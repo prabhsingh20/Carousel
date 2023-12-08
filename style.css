@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -12,15 +12,14 @@ body {
   justify-content: center;
   min-height: 100vh;
   color: #555;
-  background:#f9fafb;
+  background: #f9fafb;
   line-height: 1.2;
   background-color: #d2d8d6;
-background-image: linear-gradient(315deg, #d2d8d6 0%, #dce8e0 74%);
-
+  background-image: linear-gradient(315deg, #d2d8d6 0%, #dce8e0 74%);
 }
 .wrapper {
-  max-width: 1100px;
-  width: 79%;
+  max-width: 1060px;
+  width: 100%;
   position: relative;
 }
 
@@ -36,23 +35,21 @@ background-image: linear-gradient(315deg, #d2d8d6 0%, #dce8e0 74%);
   color: #fff;
   background: #fa2424;
   border-radius: 50%;
-  box-shadow: 0 3px 6px rgba(0,0,0,0.23);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.23);
   transform: translateY(-50%);
   transition: transform 0.1s linear;
-  
 }
-.wrapper i:active{
+.wrapper i:active {
   transform: translateY(-50%) scale(0.85);
 }
-.wrapper i:first-child{
-  left: -70px;
+.wrapper i:first-child {
+  left: -55px;
 }
-.wrapper i:last-child{
+.wrapper i:last-child {
   right: -55px;
 }
 
-.carousel{
-
+.carousel {
   display: grid;
   grid-auto-flow: column;
   grid-auto-columns: calc((100% / 3) - 12px);
@@ -62,11 +59,11 @@ background-image: linear-gradient(315deg, #d2d8d6 0%, #dce8e0 74%);
   gap: 20px;
   scroll-behavior: smooth;
   scrollbar-width: none;
-  justify-content: space-around;
   align-items: center;
   height: 480px;
-  padding-left: 15px;
+  overflow: hidden;
 }
+
 .carousel::-webkit-scrollbar {
   display: none;
 }
@@ -74,59 +71,46 @@ background-image: linear-gradient(315deg, #d2d8d6 0%, #dce8e0 74%);
   scroll-behavior: auto;
 }
 
-
-.carousel :where(.card, .img) {
-  display: flex;
-  justify-content: space-between;
-}
-
- .card {
+.card {
   scroll-snap-align: start;
+  display: flex;
+  flex-direction: column;
   width: 310px;
-  height: 430px;
+  height: 420px;
   list-style: none;
   background: #fff;
   cursor: pointer;
-  padding-bottom: 15px;
-  flex-direction: column;
+  justify-content: space-around;
   border-radius: 8px;
   padding: 10px;
-  border: 1px solid rgba(100,100,111,0.2); 
-  box-shadow: 0px 7px  10px 0px rgba(100,100,111,0.2);
+  border: 1px solid rgba(100, 100, 111, 0.2);
+  box-shadow: 0px 7px 10px 0px rgba(100, 100, 111, 0.2);
   transition: all 0.4s;
 }
-.carousel .card:hover{
-  transform: scale(1.03) ;
-  /* transform: translateY(-1.2rem); */
+
+.carousel .card:hover {
+  transform: scale(1.03);
 }
 
-.carousel .card .img {
+ img {
+  width: 100%;
   height: 150px;
-  width: 100%;
-}
-.card .img img {
-  width: 100%;
-  height: 160px;
   border-radius: 10px;
   border: 4px solid #fff;
 }
 
-
-
-ul{
+ul {
   line-height: 22px;
   font-size: 15px;
-  padding-left: 20px;
+  margin-left: 20px;
 }
 
 h1 {
-  margin-top: 15px;
   font-size: 20px;
   font-weight: 700;
   color: #333;
 }
 h4 {
-  margin-top: 5px;
   color: #333;
 }
 .focus {
@@ -139,47 +123,46 @@ h4 {
   color: #fa2424;
   display: flex;
   gap: 10px;
-align-items: center;
+  align-items: center;
 }
-.rating span{
+.rating span {
   padding-top: 3px;
   font-weight: 500;
 }
-.stars{
+.stars {
   display: flex;
   gap: 0;
 }
-.star{
+.star {
   color: #fa2424;
   display: inline-block;
   height: 15px;
   font-size: 20px;
   width: 15px;
 }
-.prize{
-  margin-top: 2px;
+.prize {
   margin-left: 2px;
   font-size: 18px;
   font-weight: 700;
   color: #333;
 }
-.amount{
-  display: flex ;
+.amount {
+  display: flex;
   gap: 10px;
   align-items: center;
 }
-.cross{
+.cross {
   font-size: 13px;
   text-decoration: line-through;
 }
-.content{
+.content {
   font-size: 15px;
 }
-.offer{
+.offer {
   position: relative;
   overflow: hidden;
 }
-.offer::after{
+.offer::after {
   content: "Best value";
   position: absolute;
   top: 6%;
@@ -188,7 +171,7 @@ align-items: center;
   font-size: 14px;
   font-weight: 700;
   color: #333;
-  background-color:#ffd43b ;
+  background-color: #ffd43b;
   padding: 0.5rem 2.5rem;
   transform: rotate(45deg);
 }
@@ -203,6 +186,3 @@ align-items: center;
   width: 1em;
   margin-left: 10px;
 } */
-
-
-
