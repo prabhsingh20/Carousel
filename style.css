@@ -31,7 +31,7 @@ body {
   text-align: center;
   line-height: 50px;
   color: #fff;
-  background: #fa2424;
+  background: -webkit-linear-gradient(45deg, #ff0000, #ff8000);
   border-radius: 50%;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.23);
   transform: translateY(-50%);
@@ -96,7 +96,6 @@ img {
   width: 100%;
   height: 150px;
   border-radius: 8px;
-  /* border-radius: 10px; */
   border: 3px solid #fa2424;
 }
 
@@ -110,7 +109,6 @@ h1 {
   font-size: 20px;
   font-weight: 700;
   color: #333;
-  /* color: #fa2424; */
 }
 h4 {
   color: #333;
@@ -118,11 +116,12 @@ h4 {
 .focus {
   font-size: 17px;
   font-weight: 900;
-  color: #fa2424;
+  background: -webkit-linear-gradient(45deg, #ff0000, #ff8000);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
 }
 .rating {
   margin-left: 2px;
-  color: #fa2424;
   display: flex;
   gap: 10px;
   align-items: center;
@@ -130,6 +129,9 @@ h4 {
 .rating span {
   padding-top: 3px;
   font-weight: 500;
+  background: -webkit-linear-gradient(45deg, #ff0000, #ff8000);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
 }
 .stars {
   display: flex;
@@ -211,8 +213,7 @@ h4 {
 }
 
 @media screen and (max-width: 824px) {
-
-  body{
+  body {
     min-height: 660px;
   }
   .wrapper {
@@ -263,6 +264,7 @@ h4 {
     z-index: 1;
   }
   .wrapper i:last-child {
+    top: 49.6%;
     right: -8px;
   }
 }
