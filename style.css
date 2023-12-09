@@ -12,9 +12,7 @@ body {
   justify-content: center;
   min-height: 100vh;
   color: #555;
-  background: #f9fafb;
   line-height: 1.2;
-  background-color: #d2d8d6;
   background-image: linear-gradient(315deg, #d2d8d6 0%, #dce8e0 74%);
 }
 .wrapper {
@@ -97,8 +95,9 @@ body {
 img {
   width: 100%;
   height: 150px;
-  border-radius: 10px;
-  border: 4px solid #fff;
+  border-radius: 8px;
+  /* border-radius: 10px; */
+  border: 3px solid #fa2424;
 }
 
 .bullet {
@@ -212,6 +211,10 @@ h4 {
 }
 
 @media screen and (max-width: 824px) {
+
+  body{
+    min-height: 660px;
+  }
   .wrapper {
     width: 640px;
   }
@@ -235,14 +238,16 @@ h4 {
 }
 
 @media screen and (max-width: 470px) {
- 
   .wrapper {
     width: 325px;
   }
   .card {
-    width: 280px;
+    width: 285px;
     margin-left: 0;
     height: 450px;
+  }
+  .carousel .card:hover {
+    transform: scale(1);
   }
   .wrapper .carousel {
     grid-auto-columns: 100%;
@@ -258,6 +263,6 @@ h4 {
     z-index: 1;
   }
   .wrapper i:last-child {
-    right: -4px;
+    right: -8px;
   }
 }
